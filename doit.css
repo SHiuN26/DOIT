@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* Color Theme Swatches in Hex */
+* {
+  font-family: 微軟正黑體;
+}
+
+html, body {
+  padding: 0px;
+  margin: 0px;
+}
+
+#header {
+  background-image: url(https://cdn.pixabay.com/photo/2016/11/21/17/57/wood-1846849_960_720.jpg);
+  background-size: cover;
+  background-position: center top;
+  width: 100%;
+  height: 950px;
+}
+
+#header h1 {
+  font-weight: 900;
+  text-align: center;
+  font-size: 80px;
+  line-height: 80px;
+}
+
+#header h4 {
+  font-weight: 900;
+  text-align: left;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+#header ul {
+  padding: 0px;
+}
+
+#header ul li {
+  list-style: none;
+  font-size: 50px;
+}
+
+#header ul li i {
+  color: #593E34;
+}
+/*# sourceMappingURL=doit.css.map */
