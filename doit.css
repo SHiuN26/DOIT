@@ -73,7 +73,15 @@ html, body {
   border: solid 2px #593E34;
 }
 
-#about .about li {
+#about .about .skills {
+  padding: 0px;
   list-style: none;
+  width: 50px;
+  display: inline;
+}
+
+#about .about .skills li {
+  border-radius: 5px;
+  text-align: center;
 }
 /*# sourceMappingURL=doit.css.map */
