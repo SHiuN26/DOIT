@@ -61,6 +61,7 @@ html, body {
 #about h4 {
   text-align: center;
   line-height: 32px;
+  font-weight: 900;
 }
 
 #about h5 {
