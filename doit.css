@@ -73,11 +73,14 @@ html, body {
   border: solid 2px #593E34;
 }
 
+#about .about ul {
+  display: inline-block;
+  margin-left: 20px;
+}
+
 #about .about .skills {
   padding: 0px;
   list-style: none;
-  width: 50px;
-  display: inline;
 }
 
 #about .about .skills li {
