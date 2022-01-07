@@ -58,6 +58,11 @@ html, body {
   font-weight: 900;
 }
 
+#about h4 {
+  text-align: center;
+  line-height: 32px;
+}
+
 #about h5 {
   text-align: center;
   line-height: 32px;
