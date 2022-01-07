@@ -50,6 +50,7 @@ html, body {
 #about img {
   width: 350px;
   height: 350px;
+  text-align: center;
 }
 
 #about h1 {
