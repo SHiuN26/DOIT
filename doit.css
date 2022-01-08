@@ -4,6 +4,14 @@
   font-family: 微軟正黑體;
 }
 
+* #top {
+  display: none;
+}
+
+* #mid {
+  display: none;
+}
+
 html, body {
   padding: 0px;
   margin: 0px;
@@ -47,6 +55,10 @@ html, body {
   color: #593E34;
 }
 
+#about {
+  background-color: #DFE7F2;
+}
+
 #about img {
   width: 350px;
   height: 350px;
@@ -87,5 +99,9 @@ html, body {
 #about .about .skills li {
   border-radius: 5px;
   text-align: center;
+}
+
+#show {
+  background-color: #BF9B7A;
 }
 /*# sourceMappingURL=doit.css.map */
