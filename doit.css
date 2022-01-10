@@ -104,4 +104,9 @@ html, body {
 #show {
   background-color: #BF9B7A;
 }
+
+#show table {
+  height: 500px;
+  width: 1200px;
+}
 /*# sourceMappingURL=doit.css.map */
