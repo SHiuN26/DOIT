@@ -1,10 +1,26 @@
 //CWB-FCE97AC9-3ED8-4811-BA23-2C1229A1EA5F
 // opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001
+const apiurl ="https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-FCE97AC9-3ED8-4811-BA23-2C1229A1EA5F"
 
+var data=[{"地區":"嘉義","天氣狀況":"涼爽"},
+{"地區":"台中","天氣狀況":"炎熱"}
+] ;
 $(document).ready(function () {
+
     $("#dt").DataTable({
-        
+        "data":data,
+        "columns":[{data:"地區"},{data:"天氣狀況"}]
     });
+    // $.ajax({
+    //     "url": 'data.json', //要抓哪個地方的資料
+    //     "method": "GET", //使用什麼方式抓
+    //     "success": function(res){
+            
+    //     }, //成功取得回傳時的事件
+    //     "error": function(res){
+    //         console.log("資料取得失敗 回去檢討檢討")
+    //     } //失敗事件
+    // });
     $(window).scroll(function(e){
         // console.log($(window).scrollTop());
         if ($(window).scrollTop()<=200)
@@ -12,46 +28,5 @@ $(document).ready(function () {
         else
             $("#pic").fadeIn(1000);
     });
-    // const corsurl= "https://cors-anywhere.herokuapp.com/"
-    const apiurl ="https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-FCE97AC9-3ED8-4811-BA23-2C1229A1EA5F"
-    // const apiurl="https://awiclass.monoame.com/api/command.php?type=get&name=tododata"
-    $.ajax({
-        url:apiurl,
-        method:"GET",
-        success:function(res){
-            console.log(res);
-            var data = res.records.location;
-            var row,print;
-        
-            for (let i = 0; i < data.length; i++) {
-                zzz=row=data[i];
-                print += 
-                    `<tr>
-                        <td>${i + 1}</td>
-                        <td>${row.locationName}</td>
-
-                        <td>${row.weatherElement[0].time[0].parameter.parameterName}
-                        溫度${row.weatherElement[2].time[0].parameter.parameterName}~
-                            ${row.weatherElement[4].time[0].parameter.parameterName}℃</td>
-
-                        <td>${row.weatherElement[0].time[1].parameter.parameterName}
-                        溫度${row.weatherElement[2].time[1].parameter.parameterName}~
-                            ${row.weatherElement[4].time[1].parameter.parameterName}℃</td>
-
-                        <td>${row.weatherElement[0].time[2].parameter.parameterName}
-                        溫度${row.weatherElement[2].time[2].parameter.parameterName}~
-                            ${row.weatherElement[4].time[2].parameter.parameterName}℃</td>
-                    </tr>`
-                    ;
-                    
-            }
-            $("tbody").html(print);
-        },
-        error:function(err){
-            console.log(err)
-        }
-    });
-    
     
 });
-
