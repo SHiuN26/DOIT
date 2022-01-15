@@ -2,6 +2,19 @@
 /* Color Theme Swatches in Hex */
 * {
   font-family: 微軟正黑體;
+  border: solid 1px black;
+}
+
+* #top {
+  display: none;
+}
+
+* #mid {
+  display: none;
+}
+
+* #show {
+  display: none;
 }
 
 html, body {
@@ -100,5 +113,9 @@ html, body {
 #show table {
   height: 500px;
   width: 1200px;
+}
+
+#show h1 {
+  margin-top: 50px;
 }
 /*# sourceMappingURL=doit.css.map */
